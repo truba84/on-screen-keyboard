@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    color: #212529; 
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;    
+}
+
+input {
+    width: 850px; 
+    
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+.container {  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width: 850px;     
+    background-color: #ececec;
+}
+
+.one {
+    
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(13, auto) 70px;
+    grid-template-rows: 48px;
+}
+
+.two {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 70px repeat(13, auto);
+    grid-template-rows: 48px;
+}
+
+.tree {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px repeat(11, auto) 80px;
+    grid-template-rows: 48px;
+}
+
+.four {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 80px repeat(12, auto);
+    grid-template-rows: 48px;
+}
+
+.four__active{    
+    grid-template-columns: 80px repeat(10, auto);
+}
+
+.five {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 90px 80px auto;
+    grid-template-rows: 48px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;    
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 3px -1px rgb(0 0 0 / 30%);
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.caps {    
+    background: rgb(211, 210, 210);
+    border: 1px solid red;
+}
